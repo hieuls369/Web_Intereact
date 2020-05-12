@@ -1,0 +1,120 @@
+body {
+    top: 0;
+    margin: 0;
+    background-image: url("/image/1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.script-bar{
+    color: #fff;
+    margin-right: 20px;
+    
+}
+
+.btnSave{
+    padding: 15px;
+    margin: 0px 70px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+}
+
+.script-menu{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 500px;
+    background-color: brown;
+}
+.py-2 a{
+    text-decoration: none;
+}
+
+.script-bar:hover {
+    background-color: aqua;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+.bg-orange {
+    background: #f68c1f;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.bg-red {
+    background: #890400;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+/**
+* Header
+*/
+
+.title {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.title:hover {
+    text-decoration: underline;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/**
+* Content
+*/
+
+.left {
+    width: 75%;
+}
+
+.image-first {
+    width: 160px;
+}
+
+.image-second {
+    width: 330px;
+}
+
+.text-flower {
+    font-family: 'Dancing Script';
+}
+
+.image-post {
+    float: right;
+    width: 340px;
+}
+
+.left-contact {
+    width: 50%;
+}
+
+.table {
+    width: 100%;
+}
+
+.border-dotted {
+    border: dotted 2px rgb(161, 161, 161);
+}
