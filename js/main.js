@@ -32,18 +32,12 @@ document.getElementsByClassName("title")[0].style.fontSize = "50px";
 
 //$("<h3>Price: 3$</h3>").insertAfter($("div:text-white(1)"));
 
-function colorChange(){
-
-    myColor = "red";
-
-    $(".header").css("color", "blue");
-}
-
-colorChange();
 
 /*Interact with the web */
 
 $(".script-fun > li").siblings().hide();
+
+var pictureC = "";
 
 $(".py-2 a:eq(3)").click(function(){
 
@@ -52,11 +46,24 @@ $(".py-2 a:eq(3)").click(function(){
 
     $(this).toggleClass("open");
 
+    for (let i = 0; i < background.length; i++) {
+        $(".back"+i).css("background-image", "url("+ background[i] +")");
+        $(".back"+i).click(function(){
+            pictureC = background[i];
+            $(this).toggleClass("addBorder");
+            $(this).siblings().removeClass("addBorder");
+
+        });
+        
+    }
+
+    $(".back").css("background-image", "url("+ background[0] +")");
+
     if($(this).hasClass("open")){
         
         
         $(".script-menu").animate({
-            width: "25%"
+            width: "35%"
         }, 500, function(){
             $(".py-2 a:eq(3)").text("Close");
             $(".script-fun > li").siblings().show();
@@ -76,7 +83,27 @@ $(".py-2 a:eq(3)").click(function(){
     
 });
 
+var background = [
+    "image/1.jpg",
+    "image/3.jpg",
+    "image/4.jpg",
+    "image/5.jpg",
+];
+
 $(".btnSave").click(function(){
+    var titleC = $("#titleC").val();
+    var bannerC = $("#bannerC").val();
+    var bgC = $("#bgC").val();
     
-})
+    $("#title").text(titleC);
+    $("#slogan").text(bannerC);
+    $(".header").css("background", bgC);
+
+    for (let i = 0; i < background.length; i++) {
+        if($(".back"+i).hasClass("addBorder")){
+            $("body").css("background-image", "url("+background[i]+")");
+        }
+        
+    }
+});
 

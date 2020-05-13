@@ -13,13 +13,20 @@ body {
 }
 
 .btnSave{
-    padding: 15px;
-    margin: 0px 70px;
-    text-align: center;
-    background-color: red;
-    color: #fff;
+    margin-top: 20px;
 }
 
+.btnSave a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: red;
+    cursor: pointer;
+}
 .script-menu{
     position: absolute;
     right: 0;
@@ -27,12 +34,33 @@ body {
     height: 500px;
     background-color: brown;
 }
+.script-fun li{
+    list-style: none;
+}
+
 .py-2 a{
     text-decoration: none;
 }
 
 .script-bar:hover {
     background-color: aqua;
+}
+
+.background-img{
+    display: flex;
+    height: 50px;
+}
+
+.addBorder{
+    border-bottom: red 3px solid;
+}
+
+.background-img > div {
+    width: 20%;
+    height: 60px;
+    margin-right: 5px;
+    background-color: red;
+    background-size: cover;
 }
 
 nav{
@@ -70,6 +98,9 @@ nav{
 * Header
 */
 
+.header{
+
+}
 .title {
     font-size: 3rem;
     line-height: 3rem;
